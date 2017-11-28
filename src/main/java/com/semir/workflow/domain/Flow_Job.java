@@ -2,32 +2,56 @@ package com.semir.workflow.domain;
 
 import javafx.scene.text.Text;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
 
 /*
 * create by zhanglei 2017.11.27
 * entity  for workflow job list detail
+* column
 *
+* id
+  type
+  script
+  dependency
+  modify_by
+  modify_time
+  project_id
+  sequence
+  status
 *
 * */
 @Entity
-public class FlowJob {
-
-    private int id;
+@Table(name = "flow_job")
+public class Flow_Job {
+    //id primiary key  auto_increment
+    @Id
+    @GeneratedValue
+    private Long id;
+    @Column(name = "type", nullable = true)
     private String type;
+    @Column(name = "script")
     private String script;
-    private int dependency;
+    @Column(name = "dependency")
+    private String dependency;
+    @Column(name = "modify_by")
     private String modifyBy;
+    @Column(name = "modify_time")
     private String modifyTime;
-    private int projectId;
-    private int sequence;
-    private int status;
+    @Column(name = "project_id")
+    private String projectId;
+    @Column(name = "sequence")
+    private Integer sequence;
+    @Column(name = "status")
+    private Integer status;
 
-    public int getId() {
+    public Flow_Job() {
+    }
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -47,11 +71,11 @@ public class FlowJob {
         this.script = script;
     }
 
-    public int getDependency() {
+    public String getDependency() {
         return dependency;
     }
 
-    public void setDependency(int dependency) {
+    public void setDependency(String dependency) {
         this.dependency = dependency;
     }
 
@@ -71,42 +95,27 @@ public class FlowJob {
         this.modifyTime = modifyTime;
     }
 
-    public int getProjectId() {
+    public String getProjectId() {
         return projectId;
     }
 
-    public void setProjectId(int projectId) {
+    public void setProjectId(String projectId) {
         this.projectId = projectId;
     }
 
-    public int getSequence() {
+    public Integer getSequence() {
         return sequence;
     }
 
-    public void setSequence(int sequence) {
+    public void setSequence(Integer sequence) {
         this.sequence = sequence;
     }
 
-    public int getStatus() {
+    public Integer getStatus() {
         return status;
     }
 
-    public void setStatus(int status) {
+    public void setStatus(Integer status) {
         this.status = status;
-    }
-
-    @Override
-    public String toString() {
-        return "FlowJob{" +
-                "id=" + id +
-                ", type='" + type + '\'' +
-                ", script='" + script + '\'' +
-                ", dependency=" + dependency +
-                ", modifyBy='" + modifyBy + '\'' +
-                ", modifyTime='" + modifyTime + '\'' +
-                ", projectId=" + projectId +
-                ", sequence=" + sequence +
-                ", status=" + status +
-                '}';
     }
 }
