@@ -26,7 +26,7 @@ public class Flow_User {
     @Column(name="password")
     private String password;
     @Column(name="is_admin")
-    private String isAdmin;
+    private Integer isAdmin;
     @Column(name="active")
     private Integer active;
 
@@ -56,11 +56,11 @@ public class Flow_User {
         this.password = password;
     }
 
-    public String getIsAdmin() {
+    public Integer getIsAdmin() {
         return isAdmin;
     }
 
-    public void setIsAdmin(String isAdmin) {
+    public void setIsAdmin(Integer isAdmin) {
         this.isAdmin = isAdmin;
     }
 

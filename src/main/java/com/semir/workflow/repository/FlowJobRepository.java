@@ -14,10 +14,8 @@ import java.util.List;
 public interface FlowJobRepository  extends Repository<Flow_Job,Long> {
     //查询所有的job list
     List<Flow_Job> findAll();
-    //通过id查询job
-    //List<Flow_Job> findById(int id);
-    //通过protect的id进行查询
-    //List<Flow_Job> findByProjectIdOrderByIdIdAsc(int projectId);
-    //保存
+    //get flow job list by project order by sequence Asc
     List<Flow_Job> findByProjectIdOrderBySequenceAsc(Long projectId);
+    //save flow job
+    void save(Flow_Job flow_job);
 }
