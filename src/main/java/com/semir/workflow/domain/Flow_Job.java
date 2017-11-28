@@ -38,7 +38,7 @@ public class Flow_Job {
     @Column(name = "modify_time")
     private String modifyTime;
     @Column(name = "project_id")
-    private String projectId;
+    private Long projectId;
     @Column(name = "sequence")
     private Integer sequence;
     @Column(name = "status")
@@ -95,11 +95,11 @@ public class Flow_Job {
         this.modifyTime = modifyTime;
     }
 
-    public String getProjectId() {
+    public Long getProjectId() {
         return projectId;
     }
 
-    public void setProjectId(String projectId) {
+    public void setProjectId(Long projectId) {
         this.projectId = projectId;
     }
 
