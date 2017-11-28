@@ -18,9 +18,11 @@ public class Test {
     @RequestMapping(value = "/flowjob",method = RequestMethod.GET)
     public List<Flow_Job> getAllJob(){
         return flowJobRepository.findAll();
-        //==============
     }
-
+    @RequestMapping(value = "/aaa",method = RequestMethod.GET)
+  public String getAll(){
+        return "aaa";
+  }
 
 
 
