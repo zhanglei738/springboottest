@@ -1,22 +1,19 @@
-package com.semir.workflow.contorller;
+package com.shuke.workflow.contorller;
 
-import com.semir.workflow.domain.Flow_Job;
-import com.semir.workflow.domain.Flow_Parameter;
-import com.semir.workflow.domain.Flow_Project;
-import com.semir.workflow.domain.Flow_User;
-import com.semir.workflow.repository.FlowJobRepository;
-import com.semir.workflow.service.FlowJobService;
-import com.semir.workflow.service.FlowParameterService;
-import com.semir.workflow.service.FlowProjectService;
-import com.semir.workflow.service.FlowUserService;
-import org.hibernate.annotations.Parameter;
+import com.shuke.workflow.domain.Flow_Job;
+import com.shuke.workflow.domain.Flow_Parameter;
+import com.shuke.workflow.domain.Flow_Project;
+import com.shuke.workflow.domain.Flow_User;
+import com.shuke.workflow.service.FlowJobService;
+import com.shuke.workflow.service.FlowParameterService;
+import com.shuke.workflow.service.FlowProjectService;
+import com.shuke.workflow.service.FlowUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.persistence.Entity;
 import java.util.List;
 
 @RestController

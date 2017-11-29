@@ -1,4 +1,4 @@
-package com.semir.workflow;
+package com.shuke.workflow;
 
 import org.junit.*;
 import org.junit.runner.RunWith;

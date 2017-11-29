@@ -1,6 +1,6 @@
-package com.semir.workflow.repository;
+package com.shuke.workflow.repository;
 
-import com.semir.workflow.domain.Flow_Project;
+import com.shuke.workflow.domain.Flow_Project;
 import org.springframework.data.repository.Repository;
 
 import java.util.List;

@@ -1,6 +1,6 @@
-package com.semir.workflow.service;
+package com.shuke.workflow.service;
 
-import com.semir.workflow.domain.Flow_User;
+import com.shuke.workflow.domain.Flow_User;
 
 import java.util.List;
 

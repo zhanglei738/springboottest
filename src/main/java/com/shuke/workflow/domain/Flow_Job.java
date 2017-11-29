@@ -1,4 +1,4 @@
-package com.semir.workflow.domain;
+package com.shuke.workflow.domain;
 
 import javafx.scene.text.Text;
 

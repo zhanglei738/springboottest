@@ -1,8 +1,8 @@
-package com.semir.workflow.service.impl;
+package com.shuke.workflow.service.impl;
 
-import com.semir.workflow.domain.Flow_Job;
-import com.semir.workflow.repository.FlowJobRepository;
-import com.semir.workflow.service.FlowJobService;
+import com.shuke.workflow.domain.Flow_Job;
+import com.shuke.workflow.repository.FlowJobRepository;
+import com.shuke.workflow.service.FlowJobService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 /*impl for flow job service
